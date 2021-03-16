@@ -38,7 +38,7 @@ public class SongController {
             throw new RuntimeException("Song not found! id:" + id);
         }
         crud.deleteById(id);
-        return  "Deleted Shelter id: " + id;
+        return  "Deleted Song id: " + id;
     }
 
     @PostMapping("/addSong")

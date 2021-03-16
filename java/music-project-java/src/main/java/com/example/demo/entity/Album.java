@@ -14,8 +14,8 @@ public class Album {
     private String name;
     @Column(name = "genre")
     private String genre;
-    @Column(name = "releaseDate")
-    private Date releaseDate;
+    @Column(name = "release_date")
+    private Date release_date;
     @Column(name = "artist")
     private String artist;
     @Column(name = "art")
@@ -47,11 +47,11 @@ public class Album {
     }
 
     public Date getReleaseDate() {
-        return releaseDate;
+        return release_date;
     }
 
-    public void setReleaseDate(Date releaseDate) {
-        this.releaseDate = releaseDate;
+    public void setReleaseDate(Date release_date) {
+        this.release_date = release_date;
     }
 
     public String getArtist() {
@@ -76,7 +76,7 @@ public class Album {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", genre='" + genre + '\'' +
-                ", releaseDate=" + releaseDate +
+                ", release_date=" + release_date +
                 ", artist='" + artist + '\'' +
                 ", art='" + art + '\'' +
                 '}';

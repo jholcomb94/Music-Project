@@ -20,10 +20,12 @@ public class AlbumController {
     public List<Object> getAll(){
         return crud.getAll();
     }
+
     @GetMapping({"/retrieveAlbum/{albumId}"})
     public Object retrieveAlbum(@PathVariable int albumId){
         return this.crud.getById(albumId);
     }
+
     @PutMapping({"/updateAlbum"})
     public Object updateAlbum(@RequestBody Album album){
         crud.update(album);
