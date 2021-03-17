@@ -10,7 +10,7 @@ class AlbumDataService{
     updateAlbum(album){
         return axios.put('http://localhost:8080/updateAlbum',album);
     }
-    addAlbum(album){
+    addAlbums(album){
         return axios.post('http://localhost:8080/addAlbum',album)
     }
     deleteAlbum(id){

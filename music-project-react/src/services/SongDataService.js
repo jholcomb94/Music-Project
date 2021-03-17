@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 class SongDataService{
-    retrieveAllSong(){
+    retrieveAllSongs(){
         return axios.get('http://localhost:8080/retrieveAllSongs');
     }
     retrieveSong(id){

@@ -1,0 +1,13 @@
+.page{
+    background-color: aquamarine;
+    height: 100%;
+}
+.table{
+    border-radius: 10px;
+    border-style: solid;
+    border-color:rgb(176, 253, 228);
+    border-width: 2px;
+}
+.songs{
+    font-size: 15px;
+}

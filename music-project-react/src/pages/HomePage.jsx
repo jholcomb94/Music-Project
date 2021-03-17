@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import MusicList from './MusicList'
+
 
 class HomePage extends Component{
     constructor(props){
@@ -10,8 +12,9 @@ class HomePage extends Component{
 
     render(){
         return (
-            <div>
-                <h1>HOME PAGE</h1>
+            <div className = "page">
+                <h1>MUSIC DATABASE</h1>
+                <MusicList></MusicList>
             </div>
         )
     }
