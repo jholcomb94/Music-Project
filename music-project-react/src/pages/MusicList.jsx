@@ -58,6 +58,10 @@ class MusicList extends Component{
                                                                 songs.albumID === albums.id ?
                                                                 <td>{songs.title}</td>: <td></td>
                                                                 }
+                                                                {
+                                                                    songs.albumID === albums.id ?
+                                                                    <td>{songs.length}</td>: <td></td>
+                                                                }
                                                             </tr>
                                                         )
                                                 }

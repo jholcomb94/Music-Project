@@ -1,11 +1,11 @@
 .page{
-    background-color: aquamarine;
+    background-color: rgb(181, 247, 225);
     height: 100%;
 }
 .table{
     border-radius: 10px;
     border-style: solid;
-    border-color:rgb(176, 253, 228);
+    border-color:rgb(71, 255, 197);
     border-width: 2px;
 }
 .songs{
