@@ -3,7 +3,11 @@ import AlbumDataService from '../services/AlbumDataService';
 import SongDataService from '../services/SongDataService';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+<<<<<<< HEAD
 import moment from 'moment'
+=======
+import moment, { relativeTimeThreshold } from 'moment'
+>>>>>>> master
 
 class Editdb extends Component{
     constructor(props){
@@ -118,7 +122,10 @@ class Editdb extends Component{
         SongDataService.deleteSong(this.state.ID)
         alert("deleted song with id:" + this.state.ID)
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     
 
     render(){

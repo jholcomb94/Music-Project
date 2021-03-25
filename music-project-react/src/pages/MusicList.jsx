@@ -80,6 +80,7 @@ class MusicList extends Component{
                 <table  className = "table">
                     <thead>
                         <table>
+<<<<<<< HEAD
                             <td><h3>FILTERS: </h3></td>
 
                             <td><th>Artist:</th></td>
@@ -108,6 +109,38 @@ class MusicList extends Component{
                             <td><th><input type = "text" name = "AlbumFilter" onChange = {this.handleChange}></input></th></td>
                             <td><th><button onClick = {this.AlbumFilterSet}>submit</button></th></td>
 
+=======
+                            <tbody>
+                                {
+                                    this.state.albums.map(
+                                        albums=>
+                                        <div >
+                                            <h3>{albums.artist}</h3>
+                                            <h4>{albums.name}</h4>
+                                            <tr className = "songs">
+                                                
+                                                <td><a><img src = {albums.art} style = {{height:"500px", width: "500px"}}></img></a></td>
+                                                {
+                                                    this.state.songs.map(
+                                                        songs=>
+                                                            <tr>
+                                                                {
+                                                                songs.albumID === albums.id ?
+                                                                <td>{songs.title}</td>: <td></td>
+                                                                }
+                                                                {
+                                                                    songs.albumID === albums.id ?
+                                                                    <td>{songs.length}</td>: <td></td>
+                                                                }
+                                                            </tr>
+                                                        )
+                                                }
+                                            </tr>
+                                        </div>
+                                    )
+                                }
+                            </tbody>
+>>>>>>> master
                         </table>
                     </thead>
 
